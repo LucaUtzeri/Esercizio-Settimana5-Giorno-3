@@ -6,6 +6,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   max-width: 900px;
   margin-inline: auto;
+  color: #742305;
 }
 
 main {
@@ -16,7 +17,15 @@ main {
 
 h1 {
   text-align: center;
-  font-size: 45px;
+  font-size: 3rem;
+}
+h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.6rem;
 }
 
 .container {
@@ -30,7 +39,7 @@ h1 {
 .card {
   flex-direction: column;
   max-width: 48.3%;
-  background-color: antiquewhite;
+  background-color: #fef7e2;
   border-radius: 50px;
   display: flex;
 }
@@ -54,18 +63,30 @@ h1 {
   text-align: center;
 }
 
+.card-body h4 {
+  margin: 0;
+}
+.card-body p {
+  margin-top: 0;
+}
+
 .card-content {
   display: flex;
   align-items: center;
 }
-.card-content div {
+.card-content p {
   flex-grow: 1;
 }
 
+.card button {
+  font-weight: 600;
+}
+
 header {
-  background-color: antiquewhite;
+  background-color: #fef7e2;
   justify-content: space-between;
   border-radius: 50px;
+  position: sticky;
 }
 
 header nav {
@@ -78,14 +99,15 @@ header nav {
 
 ul {
   flex-direction: row;
-  display: inline;
   max-width: 100%;
   display: flex;
   text-align: center;
+  text-decoration: none;
+  font-weight: 600;
 }
 
 ul li {
-  background-color: rgb(214, 186, 145);
+  background-color: #ffdf7f;
   border-radius: 50px;
   justify-content: space-evenly;
   padding: 10px;
@@ -95,7 +117,8 @@ ul li {
 
 ul li:nth-of-type(3) {
   height: 50px;
-  text-align: center;
+  margin: auto;
+  align-items: center;
 }
 
 .shop-logo {
@@ -108,6 +131,21 @@ button {
   height: 30px;
   border-radius: 30px;
   border: none;
-  background-color: rgb(212, 180, 89);
+  background-color: #ffdf7f;
   align-self: center;
+}
+
+article {
+  background-color: #fef7e2;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+article p {
+  font-size: 1.1rem;
+}
+
+article img {
+  margin-inline: auto;
+  width: 100%;
 }
